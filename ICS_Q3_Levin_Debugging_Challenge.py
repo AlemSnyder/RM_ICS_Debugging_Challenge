@@ -2,6 +2,8 @@
 
 #|
 
+import random
+
 moves = {"tackle": range(18, 26), "pk thunder": range(10, 36), "psi heal": range(10, 20)}
 
 class Character:
