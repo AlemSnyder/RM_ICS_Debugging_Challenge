@@ -22,8 +22,8 @@ def readout_print(text):  # I am SO PROUD of my text scrolling function! it look
     for letter in text:
         readout_text.set(readout_text.get() + letter)
         root.update_idletasks()
-        root.after(round(len(text) / 5), nothing())  # the text scrolls faster if there's more of it
-    root.after(len(text) * 30, nothing())  # the text stays onscreeen longer if there's more of it.
+        root.after(round(200 / len(text) ),)  # the text scrolls faster if there's more of it
+    root.after(len(text) * 30 )  # the text stays onscreeen longer if there's more of it.
 
 
 def do_it(): # Calling the readout_print function to put some text in the window

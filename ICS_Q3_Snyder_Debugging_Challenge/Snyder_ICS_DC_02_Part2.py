@@ -1,20 +1,12 @@
 #Alem Snyder
-#print items in a deceonary
-Items = {"Milk":6.50,
-         "Bread": 4.99,
-         "Butter": 7.35,
-         "Bananas":.19,
-         "Oatmeal (1lb)":2.00,
-         "Chicken":12.35,}
+#is a bad person
 
-for name,price in Items.items():
-    print(f'{" "*(10-(len(name)+len(str(price)))/2)}{name}      {str(price)}')
+#the recurcive definit of a sumation
+def sumation(function, start, stop):
+    if start == stop:
+        return function(star)
+    else:
+        total = function(start) + sumation(function, start+1, stop)
+    return total
 
-#Should print
-
-#       Milk     6.5
-#      Bread     4.99
-#     Butter     7.35
-#     Bananas     0.19
-#  Oatmeal (1lb)     2.0
-#    Chicken     12.35
+print(sumation(lambda x : x*x, 0,100))
