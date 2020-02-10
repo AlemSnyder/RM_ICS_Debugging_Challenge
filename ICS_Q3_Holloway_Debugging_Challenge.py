@@ -12,11 +12,6 @@ main = tk.Frame(root, background = '#e0fe00')
 main.grid(row=0, column=0, rowspan = 999, columnspan = 999, sticky=("nsew"))
 readout_text = tk.StringVar()
 
-
-def nothing():  # I only need this in a few spots, but I need it nonetheless.
-    pass
-
-
 def readout_print(text):  # I am SO PROUD of my text scrolling function! it looks like a real RPG!!!
     readout_text.set('')
     for letter in text:
