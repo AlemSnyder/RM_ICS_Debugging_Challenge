@@ -27,7 +27,7 @@ for x in fhand:
     line = str(x)
     for y in line:
         # if python finds any letters hidden among the various symbols found in the text document, assemble them into a new message
-        if "abcdefghijklmnopqrstuvwxyz".find(y.lower())!=-1:
+        if y in "abcdefghijklmnopqrstuvwxyz":
             message2 = message2 + y
 
 # print the second new message
