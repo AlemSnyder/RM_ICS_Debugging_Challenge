@@ -1,12 +1,12 @@
 #Alem Snyder
-#print items in a deceonary
-Items = {"Milk":6.50,
-         "Bread": 4.99
-         "Butter": 7.35
-         ""}
+#is a bad person
 
-#Should print
-#Item... ...price
-#.
-#.
-#.
+#the recurcive definit of a sumation
+def sumation(function, start, stop):
+    if start == stop:
+        return function(star)
+    else:
+        total = function(start) + sumation(function, start+1, stop)
+    return total
+
+print(sumation(lambda x : x*x, 0,100))

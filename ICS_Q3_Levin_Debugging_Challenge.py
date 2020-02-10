@@ -1,7 +1,10 @@
-import random
 #Adam Levin
 
-moves = {"tackle": range(18, 26), "pk thunder": range(10, 36), "psi heal": range(10, 20)
+#|
+
+import random
+
+moves = {"tackle": range(18, 26), "pk thunder": range(10, 36), "psi heal": range(10, 20)}
 
 class Character:
     "Define our general Character which we base Ness and Starman off of." #The error isn't what the debug says it is.
@@ -13,7 +16,7 @@ class Character:
 
 
 class Ness(Character):
-    "Ness starts with 100 health and have the choice of three moves"
+    #Ness starts with 100 health and have the choice of three moves
     def __init__(self, health = 100):
         super().__init__(health)
 
@@ -35,7 +38,7 @@ class Ness(Character):
 
 
 class Starman(Character):
-    "The Starman, also starts with 100 health and chooses moves at random"
+    #The Starman, also starts with 100 health and chooses moves at random
     def __init__(self, health = 100):
         super().__init__(health)
 
@@ -71,5 +74,5 @@ def battle(ness, starman):
         print("Ness defeated the Starman!")
     if starman.health > 0:
         print("Ness was defeated by the Starman!")
-
+    
 battle(Ness(), Starman())

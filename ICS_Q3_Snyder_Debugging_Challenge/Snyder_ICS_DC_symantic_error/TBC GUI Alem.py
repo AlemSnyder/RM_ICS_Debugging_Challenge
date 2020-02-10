@@ -396,5 +396,5 @@ class Player(Stats):
         self.OhealthMessage = "The monster has defeated You!"
         self.OhealthCommand = LossPage
         self.defence = 50 # sets you hit chance, If I had more time this would be defined by an input
-root = Start() # like wraing root = tk.Tk()
+root = Start() # like writing root = tk.Tk()
 root.mainloop()# Time to start!
